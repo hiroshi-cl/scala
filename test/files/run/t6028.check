@@ -42,7 +42,9 @@ package <empty> {
         ()
       };
       scala.Predef.print(scala.Int.box(barParam$1));
-      <synthetic> <stable> <artifact> def $outer(): T
+      <synthetic> <stable> <artifact> def $outer(): T;
+      <synthetic> <stable> <accessor> <paramaccessor> <sub_synth> def barParam$1(): Int;
+      <synthetic> <accessor> <paramaccessor> <sub_synth> def T$MethodLocalTrait$1$_setter_|Param$1_=(x$1: Int): Unit
     };
     object MethodLocalObject$2 extends Object with T#MethodLocalTrait$1 {
       def <init>($outer: T, barParam$1: Int): T#MethodLocalObject$2.type = {

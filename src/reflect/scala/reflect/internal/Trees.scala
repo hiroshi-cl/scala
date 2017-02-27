@@ -1233,7 +1233,7 @@ trait Trees extends api.Trees {
       case Template(parents, self, body) =>
         traverseParents(parents)
         traverseSelfType(self)
-        traverseStats(body, tree.symbol)
+        traverseStats(body, currentOwner)
       case Block(stats, expr) =>
         traverseTrees(stats)
         traverse(expr)
